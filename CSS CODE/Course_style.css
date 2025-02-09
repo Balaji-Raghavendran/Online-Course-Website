@@ -1,0 +1,751 @@
+.main_heading{
+    font-size: 25px;
+    color: #39ff14;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar a{
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 7px;
+    transition: all 0.3s;
+    background-color: yellow;
+    opacity: 0.8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: orange;
+    border-color: blueviolet;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchtext{
+    padding: 10px;
+    width: 300px;
+    border: 3px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    position: relative;
+    z-index: 2;
+}
+
+.searchtext:focus{
+    border-color: yellow;
+}
+
+.searchbutton{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    background-color: yellow;
+    position: relative;
+    z-index: 2;
+}
+
+.main_heading_2{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.main_heading_2:hover{
+    color: red;
+}
+
+.page_introduction{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    max-width: 800px;
+    padding: 0 90px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: greenyellow;
+    position: relative;
+    z-index: 2;
+}
+
+.page_introduction_2{
+    display: flex;
+    text-align: justify;
+    padding: 0 90px;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 20px 0;
+}
+
+.list li{
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+}
+
+.about_course{
+    background-image: url(degree_completion.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.company{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+.visible{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.course_heading{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 40px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Trending{
+    position: relative;
+    cursor:pointer;
+    font-size: 35px;
+    padding-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: inline-block;
+}
+
+.Trending::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%) ;
+}
+
+.courses_available{
+    text-align: center;
+}
+
+.Trending:hover::after{
+    width: 100%;
+}
+
+
+.courses_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    background: linear-gradient(135deg, #f5f5dc, #fffff0);
+}
+
+.course_item{
+    position: relative;
+    text-align: center;
+    width: 150px;
+}
+
+.courses_available_logo{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 128, 0.5);
+
+}
+
+.courses_available_logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.course_description{
+    display: none;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: rgba(0,0,128,0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.course_item:hover .course_description{
+    display: block;
+    opacity: 1;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.business_title{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    display: inline-block;
+}
+
+.business_title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%) ;
+}
+
+.business{
+    text-align: center;
+}
+
+.business_title:hover::after{
+    width: 100%;
+}
+
+
+.business_item{
+    position: relative;
+    text-align: center;
+    width: 150px;
+}
+
+.business_logos{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 128, 0.5);
+}
+
+
+.business_logos:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.business_background{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    gap: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.business_description{
+    display: none;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: rgba(255,192,203);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.business_item:hover .business_description{
+    display: block;
+    opacity: 1;
+}
+
+.Leadership_management{
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.coding_courses_title{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    display: inline-block;
+}
+
+.coding_courses_title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%) ;
+}
+
+.coding_courses{
+    text-align: center;
+}
+
+.coding_courses_title:hover::after{
+    width: 100%;
+}
+
+.coding_courses_item{
+    position: relative;
+    text-align: center;
+    width: 150px;
+}
+
+.coding_courses_logos{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 128, 0.5);
+}
+
+.coding_courses_logos:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.coding_courses_background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    gap: 20px;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+}
+
+.coding_courses_description{
+    display: none;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: rgba(180,370,450);
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.coding_courses_item:hover .coding_courses_description{
+    display: block;
+    opacity: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.programming_language{
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mobile_app_development{
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.science_and_research_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.science_and_research_title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%) ;
+}
+
+.science_and_research{
+    text-align: center;
+}
+
+.science_and_research_title:hover::after{
+    width: 100%;
+}
+
+.science_and_research_item{
+    position: relative;
+    text-align: center;
+    width: 150px;
+}
+
+.science_and_research_logos{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(64, 224, 208, 0.3);
+    cursor: pointer;
+}
+
+.science_and_research_logos:hover{
+    transform: scale(1.1);
+}
+
+.science_and_research_background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px;
+    gap: 20px;
+    background: linear-gradient(135deg, #b0bec5, #eceff1);
+}
+
+.science_and_research_description{
+    display: none;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: rgba(180,370,450);
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.3 ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.science_and_research_item:hover .science_and_research_description{
+    display: block;
+    opacity: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Language_and_communication_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+}
+
+.Language_and_communication_title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%) ;
+}
+
+.Language_and_communication{
+    text-align: center;
+}
+
+.Language_and_communication_title:hover::after{
+    width: 100%;
+}
+
+.Language_and_communication_item{
+    position: relative;
+    text-align: center;
+    width: 150px;
+}
+
+.Language_and_communication_logos{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.7);
+    cursor: pointer;
+}
+
+.Language_and_communication_logos:hover{
+    transform: scale(1.1);
+}
+
+.Language_and_communication_background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px;
+    gap: 20px;
+    background: linear-gradient(135deg, #c8e6c9, lightgreen);
+}
+
+.Language_and_communication_description{
+    display: none;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: rgba(220,390,118);
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.3 ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Language_and_communication_item:hover .Language_and_communication_description{
+    display: block;
+    opacity: 1;
+}
+
+.hidden{
+   display: none;
+}
+
+.visible{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.customer_feedback_heading{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 50px;
+    display: inline-block;
+}
+
+.customer_feedback{
+    text-align: center;
+}
+
+.customer_feedback_heading::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%) ;
+}
+
+.customer_feedback_heading:hover::after{
+    width: 100%;
+}
+
+.customer_feedback_background{
+    display: flex;
+    background:linear-gradient(135deg, #b0bec5, #eceff1);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.customer_1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.customer_details{
+    display: flex;
+    flex-direction: column;
+}
+
+.erick_name{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.erick_occupation{
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.erick_review{
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+    font-style: italic;   
+}
