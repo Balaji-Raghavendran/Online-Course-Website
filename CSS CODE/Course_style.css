@@ -756,3 +756,37 @@
     font-size: 14px;
     color: #333;
 }
+
+.get_started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#btn{
+    padding: 10px 60px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background-color:fuchsia;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#btn:hover{
+    transform: scale(1.1s);
+    background-color: #e64a19;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.click_below{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
