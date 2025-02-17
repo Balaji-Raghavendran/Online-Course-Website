@@ -790,3 +790,42 @@
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.all_rights_reserved{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.all_rights_reserved_bg{
+    width: 100%;
+    background: linear-gradient(135deg, #b0bec5, #eceff1);
+    padding: 60px 20px;
+}
+.all_rights_reserved_text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+.all_rights_reserved_description{
+    line-height: 1.6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social_media_logos{
+    display: flex;
+    gap: 15px;
+}
+
+.instagram_logo{
+    width: 50px;
+    height: 50px;
+}
+
+.twitter_logo{
+    width: 50px;
+    height: 50px;
+}
+
+.gmail_logo{
+    width: 50px;
+    height: 50px;
+}
