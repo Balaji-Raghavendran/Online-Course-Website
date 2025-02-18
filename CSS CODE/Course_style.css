@@ -62,7 +62,7 @@
 }
 
 .searchtext:focus{
-    border-color: yellow;
+    border-color: black;
 }
 
 .custom_dropdown{
